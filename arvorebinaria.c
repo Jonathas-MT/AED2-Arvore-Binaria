@@ -56,17 +56,3 @@ void posOrdem(No* raiz) {
         printf("%d ", raiz->valor);
     }
 }
-
-int altura(No* raiz) {
-
-    if (raiz == NULL)
-        return 0;
-
-    int esquerda = altura(raiz->esq);
-    int direita = altura(raiz->dir);
-
-    if (esquerda > direita)
-        return esquerda + 1;
-    else
-        return direita + 1;
-}
