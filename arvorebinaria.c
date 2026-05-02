@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "arvore.h"
+#include "arvorebinaria.h"
 
 No* criarNo(int valor) {
     No* novo = (No*) malloc(sizeof(No));
