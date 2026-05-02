@@ -1,6 +1,10 @@
 #include "arvorebinaria.h"
 #include <stdio.h>
 #include <stdlib.h>
+<<<<<<< HEAD
+=======
+#include "arvorebinaria.h"
+>>>>>>> 79639244bb889fce5fdd30a6d60e05d453e708d6
 
 No* criarNo(int valor) {
     No* novo = (No*) malloc(sizeof(No));
@@ -55,4 +59,8 @@ void posOrdem(No* raiz) {
         posOrdem(raiz->dir);
         printf("%d ", raiz->valor);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 79639244bb889fce5fdd30a6d60e05d453e708d6
