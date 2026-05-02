@@ -1,6 +1,6 @@
+#include "arvorebinaria.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "arvore.h"
 
 No* criarNo(int valor) {
     No* novo = (No*) malloc(sizeof(No));
@@ -55,18 +55,4 @@ void posOrdem(No* raiz) {
         posOrdem(raiz->dir);
         printf("%d ", raiz->valor);
     }
-}
-
-int altura(No* raiz) {
-
-    if (raiz == NULL)
-        return 0;
-
-    int esquerda = altura(raiz->esq);
-    int direita = altura(raiz->dir);
-
-    if (esquerda > direita)
-        return esquerda + 1;
-    else
-        return direita + 1;
 }
